@@ -1,10 +1,10 @@
-a=int(input("Enter a number:"))
-if(a<=1):
-    print("Not a prime")
-else:
-  for i in range(2,a//2+1):
-     if(a%i==0):
-       print("Not a prime")
-       break
-  else:
-       print("Prime")
+def prime(a):
+    if(a<=1):
+        return "Not a Prime"
+    for i in range(2,a):
+        if(a%i==0):
+            return "Not a Prime"
+    return "prime"
+a=int(input("Enter a Number:"))
+res=prime(a)
+print(res)
