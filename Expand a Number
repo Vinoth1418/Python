@@ -1,0 +1,17 @@
+def abc(num):
+  result=[]
+  place=1
+  temp=num
+  while(temp>=10):
+    temp//=10
+    place*=10
+  while(place>0):
+      digit=num//place
+      if(digit!=0):
+        result.append(str(digit*place))
+        num=num%place
+        place//=10
+  return "+".join(result)
+a=425
+res=abc(a)
+print(res)
