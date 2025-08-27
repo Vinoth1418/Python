@@ -1,0 +1,18 @@
+def ma(a,c):
+  mid=len(a)//2
+  b=[]
+  i=mid-1
+  while(i>=0):
+     b.append(a[i])
+     i-=1
+     
+  i=len(a)-1
+  while(i>=mid-1):
+    b.append(a[i])
+    i-=1
+  return b
+
+a=[1,2,3,4,5,6,7,8,9,10]
+k=5
+res=ma(a,k)
+print(res)
