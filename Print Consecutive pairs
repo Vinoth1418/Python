@@ -1,0 +1,12 @@
+def ma(a):
+ b=[]
+ for i in range(0,len(a)-1):
+     curr=a[i]
+     if(a[i+1]==curr+1):
+       b.append((curr,a[i+1]))
+ return b
+ 
+
+a=[1,2,3,4,5,6]
+res=ma(a)
+print(res)
