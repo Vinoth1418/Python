@@ -1,0 +1,11 @@
+def freq(a):
+  b={}
+  for i in a:
+    if i in b:
+      b[i]+=1
+    else:
+      b[i]=1
+  return b
+a=[1,1,1,2,2,3,3,3]
+res=freq(a)
+print(res)
