@@ -1,0 +1,11 @@
+def palin(a):
+  c=""
+  for i in range(len(a)-1,-1,-1):
+   c+=a[i]
+  return c
+a="racecar"
+res=palin(a)
+if(res==a):
+  print("Palindrome")
+else:
+    print("Not a Palindrome")
