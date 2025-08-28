@@ -1,0 +1,13 @@
+def second(a):
+  l=float('-inf')
+  s=float('-inf')
+  for i in range(0,len(a)):
+    if(a[i]>l):
+      s=l
+      l=a[i]
+    elif(a[i]>s and a[i]!=l):
+      s=a[i]
+  return s
+a=[0,-1,3,4,5]
+res=second(a)
+print(res)
