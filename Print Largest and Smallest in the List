@@ -1,0 +1,16 @@
+def count(a):
+  largest=a[0]
+  smallest=a[0]
+  for i in range(0,len(a)):
+    if(a[i]>largest):
+       largest=a[i]
+    if(a[i]<smallest):
+      
+       smallest=a[i]
+  return largest,smallest
+    
+  
+a=[12, 7, 22, 5, 19]
+res,res1=count(a)
+print(res)
+print(res1)
