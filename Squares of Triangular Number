@@ -1,0 +1,12 @@
+def count(a):
+  res=[]
+  s=0
+  for i in range(1,a+1):
+   s+=i
+   res.append(s*s)
+  return res
+    
+  
+a=4
+res=count(a)
+print(res)
