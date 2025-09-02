@@ -1,0 +1,15 @@
+def dup(a):
+ res=[]
+ for i in range(len(a)):
+   b=False
+   for j in range(0,i):
+    if(a[j]==a[i]):
+       b=True
+       break
+   if(b!=True):
+      res.append(a[i])
+ return res
+
+a=[1,2,3,2,1,4,5,2,3,5,1]
+res=dup(a)
+print(res)
