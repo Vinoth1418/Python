@@ -1,0 +1,15 @@
+def tri(a):
+    cube=a*a*a
+    temp=a
+    while(temp>0):
+        if(temp%10)!=(cube%10):
+            return False
+        temp//=10
+        cube//=10
+    return True
+a=25
+res=tri(a)
+if(res):
+    print("Tri")
+else:
+    print("Not Tri")
