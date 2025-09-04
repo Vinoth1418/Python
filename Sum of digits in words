@@ -1,0 +1,18 @@
+def tri(a):
+    res=["Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine",]
+    c=0
+    while(a>0):
+        b=a%10
+        c+=b
+        a=a//10
+    text=str(c)
+    words=[]
+    for i in range(len(text)):
+        digit=int(text[i])
+        words.append(res[digit])
+    return " ".join(words)
+
+a=92
+res=tri(a)
+print(res)
+
